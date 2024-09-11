@@ -1,0 +1,229 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b1a5d4; /* Light purple background */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.language {
+    font-size: 0.9rem;
+}
+
+.sign-in {
+    padding: 10px 2dvb;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sign-in:hover {
+    background-color: #444;
+}
+
+/* Main Login Section */
+.login-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 25rem;
+    height:20rem;
+}
+
+.tab-selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.tab i {
+    margin-right: 8px;
+}
+
+.tab.active {
+    background-color: #f5e6c3;
+    font-weight: bold;
+}
+
+.login-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: grey;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: not-allowed;
+}
+
+.login-btn.active {
+    background-color: black;
+    cursor: pointer;
+}
+
+.register-link {
+    display: block;
+    margin-top: 20px;
+    color: black;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer Info */
+.security-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* Footer */
+.footer-container {
+    background-color: black;
+    color: white;
+    padding: 20px 24rem;
+    text-align: left;
+}
+@media (max-width: 768px) {
+    .footer-container {
+        display: none;
+    }
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-button {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.status-button i {
+    margin-right: 8px;
+}
+
+.status-button:hover {
+    background-color: #666;
+}
+
+.app-downloads img {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.app-downloads img:hover {
+    opacity: 0.8;
+}

